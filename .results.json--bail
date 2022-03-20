@@ -1,0 +1,165 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 7,
+    "passes": 2,
+    "pending": 0,
+    "failures": 5,
+    "start": "2022-03-20T05:24:10.780Z",
+    "end": "2022-03-20T05:24:10.846Z",
+    "duration": 66
+  },
+  "tests": [
+    {
+      "title": "receives one argument and returns it in all caps",
+      "fullTitle": "shout(string) receives one argument and returns it in all caps",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "receives one argument and returns it in all lowercase",
+      "fullTitle": "whisper(string) receives one argument and returns it in all lowercase",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "takes a string argument and logs it in all caps using console.log()",
+      "fullTitle": "logShout(string) takes a string argument and logs it in all caps using console.log()",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: spy was never called with [ 'HELLO' ]\n    at assert (node_modules/expect/lib/assert.js:29:9)\n    at Expectation.toHaveBeenCalledWith (node_modules/expect/lib/Expectation.js:333:28)\n    at Context.<anonymous> (test/index-test.js:20:17)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "spy was never called with [ 'HELLO' ]"
+      }
+    },
+    {
+      "title": "takes a string argument and logs it in all lowercase using console.log()",
+      "fullTitle": "logWhisper(string) takes a string argument and logs it in all lowercase using console.log()",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: spy was never called with [ 'hello' ]\n    at assert (node_modules/expect/lib/assert.js:29:9)\n    at Expectation.toHaveBeenCalledWith (node_modules/expect/lib/Expectation.js:333:28)\n    at Context.<anonymous> (test/index-test.js:32:17)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "spy was never called with [ 'hello' ]"
+      }
+    },
+    {
+      "title": "returns \"I can't hear you!\" if `string` is lowercase",
+      "fullTitle": "sayHiToHeadphonedRoommate(string) returns \"I can't hear you!\" if `string` is lowercase",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Expected 'hello' to equal 'I can\\'t hear you!'\n    at assert (node_modules/expect/lib/assert.js:29:9)\n    at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)\n    at Context.<anonymous> (test/index-test.js:40:48)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "Expected 'hello' to equal 'I can\\'t hear you!'",
+        "actual": "hello",
+        "expected": "I can't hear you!",
+        "showDiff": true
+      }
+    },
+    {
+      "title": "returns \"YES INDEED!\" if `string` is uppercase",
+      "fullTitle": "sayHiToHeadphonedRoommate(string) returns \"YES INDEED!\" if `string` is uppercase",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Expected 'hello' to equal 'YES INDEED!'\n    at assert (node_modules/expect/lib/assert.js:29:9)\n    at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)\n    at Context.<anonymous> (test/index-test.js:44:48)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "Expected 'hello' to equal 'YES INDEED!'",
+        "actual": "hello",
+        "expected": "YES INDEED!",
+        "showDiff": true
+      }
+    },
+    {
+      "title": "returns \"I would love to!\" if `string` is \"Let's have dinner together!\"`",
+      "fullTitle": "sayHiToHeadphonedRoommate(string) returns \"I would love to!\" if `string` is \"Let's have dinner together!\"`",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Expected 'let\\'s have dinner together!' to equal 'I would love to!'\n    at assert (node_modules/expect/lib/assert.js:29:9)\n    at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)\n    at Context.<anonymous> (test/index-test.js:48:70)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "Expected 'let\\'s have dinner together!' to equal 'I would love to!'",
+        "actual": "let's have dinner together!",
+        "expected": "I would love to!",
+        "showDiff": true
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "takes a string argument and logs it in all caps using console.log()",
+      "fullTitle": "logShout(string) takes a string argument and logs it in all caps using console.log()",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: spy was never called with [ 'HELLO' ]\n    at assert (node_modules/expect/lib/assert.js:29:9)\n    at Expectation.toHaveBeenCalledWith (node_modules/expect/lib/Expectation.js:333:28)\n    at Context.<anonymous> (test/index-test.js:20:17)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "spy was never called with [ 'HELLO' ]"
+      }
+    },
+    {
+      "title": "takes a string argument and logs it in all lowercase using console.log()",
+      "fullTitle": "logWhisper(string) takes a string argument and logs it in all lowercase using console.log()",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: spy was never called with [ 'hello' ]\n    at assert (node_modules/expect/lib/assert.js:29:9)\n    at Expectation.toHaveBeenCalledWith (node_modules/expect/lib/Expectation.js:333:28)\n    at Context.<anonymous> (test/index-test.js:32:17)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "spy was never called with [ 'hello' ]"
+      }
+    },
+    {
+      "title": "returns \"I can't hear you!\" if `string` is lowercase",
+      "fullTitle": "sayHiToHeadphonedRoommate(string) returns \"I can't hear you!\" if `string` is lowercase",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Expected 'hello' to equal 'I can\\'t hear you!'\n    at assert (node_modules/expect/lib/assert.js:29:9)\n    at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)\n    at Context.<anonymous> (test/index-test.js:40:48)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "Expected 'hello' to equal 'I can\\'t hear you!'",
+        "actual": "hello",
+        "expected": "I can't hear you!",
+        "showDiff": true
+      }
+    },
+    {
+      "title": "returns \"YES INDEED!\" if `string` is uppercase",
+      "fullTitle": "sayHiToHeadphonedRoommate(string) returns \"YES INDEED!\" if `string` is uppercase",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Expected 'hello' to equal 'YES INDEED!'\n    at assert (node_modules/expect/lib/assert.js:29:9)\n    at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)\n    at Context.<anonymous> (test/index-test.js:44:48)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "Expected 'hello' to equal 'YES INDEED!'",
+        "actual": "hello",
+        "expected": "YES INDEED!",
+        "showDiff": true
+      }
+    },
+    {
+      "title": "returns \"I would love to!\" if `string` is \"Let's have dinner together!\"`",
+      "fullTitle": "sayHiToHeadphonedRoommate(string) returns \"I would love to!\" if `string` is \"Let's have dinner together!\"`",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Expected 'let\\'s have dinner together!' to equal 'I would love to!'\n    at assert (node_modules/expect/lib/assert.js:29:9)\n    at Expectation.toEqual (node_modules/expect/lib/Expectation.js:81:30)\n    at Context.<anonymous> (test/index-test.js:48:70)\n    at processImmediate (node:internal/timers:466:21)",
+        "message": "Expected 'let\\'s have dinner together!' to equal 'I would love to!'",
+        "actual": "let's have dinner together!",
+        "expected": "I would love to!",
+        "showDiff": true
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "receives one argument and returns it in all caps",
+      "fullTitle": "shout(string) receives one argument and returns it in all caps",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "receives one argument and returns it in all lowercase",
+      "fullTitle": "whisper(string) receives one argument and returns it in all lowercase",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
